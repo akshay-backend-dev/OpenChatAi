@@ -1,36 +1,227 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OpenChatAI 🤖
 
-## Getting Started
+OpenChatAI is a modern AI chat application built with **Next.js, React, TypeScript, and Tailwind CSS**.
 
-First, run the development server:
+The project aims to create a ChatGPT-like experience with a clean user interface, scalable architecture, and AI-powered conversations.
+
+---
+
+## 🚀 Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- Lucide React
+- React Markdown
+- React Syntax Highlighter
+- OpenAI API (Planned Integration)
+
+---
+
+# 📂 Project Structure
+
+```text
+src
+│
+├── app
+│ ├── api
+│ │ └── chat
+│ │     └── route.ts
+│ │
+│ ├── globals.css
+│ ├── layout.tsx
+│ └── page.tsx
+│
+├── components
+│ │
+│ ├── chat
+│ │ ├── ChatWindow.tsx
+│ │ ├── EmptyChat.tsx
+│ │ ├── MessageBubble.tsx
+│ │ └── PromptInput.tsx
+│ │
+│ ├── layout
+│ │ ├── Header.tsx
+│ │ ├── MainLayout.tsx
+│ │ └── Sidebar.tsx
+│ │
+│ ├── providers
+│ │ └── ChatProvider.tsx
+│ │
+│ └── ui
+│ ├── Avatar.tsx
+│ ├── Button.tsx
+│ ├── Input.tsx
+│ ├── Loader.tsx
+│ └── Modal.tsx
+│
+├── data
+│ ├── constants.ts
+│ ├── dummyChats.ts
+│ └── prompts.ts
+│
+├── hooks
+│ ├── useChat.ts
+│ ├── useLocalStorage.ts
+│ └── useTheme.ts
+│
+├── lib
+│ ├── api.ts
+│ ├── constants.ts
+│ └── utils.ts
+│
+└── types
+    └── chat.ts
+```
+
+---
+
+# ✨ Features
+
+## Completed
+
+✅ Modern AI chat interface  
+✅ Responsive layout  
+✅ Sidebar chat history UI  
+✅ Chat message system  
+✅ Reusable UI components  
+✅ Global chat state management  
+✅ Theme support structure  
+✅ TypeScript based architecture  
+
+
+## Upcoming
+
+🚧 OpenAI API integration  
+🚧 Streaming AI responses  
+🚧 Markdown AI responses  
+🚧 Code syntax highlighting  
+🚧 Authentication system  
+🚧 Database chat history  
+🚧 Multiple AI models  
+🚧 File upload support  
+🚧 Voice interaction  
+
+---
+
+# 🛠️ Installation & Setup
+
+## Clone Repository
+
+```bash
+git clone <repository-url>
+```
+
+## Move Into Project
+
+```bash
+cd OpenChatAI
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open in browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# 🔐 Environment Variables
 
-## Learn More
+Create a .env.local file in the root directory.
 
-To learn more about Next.js, take a look at the following resources:
+Example:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+OPENAI_API_KEY=your_api_key_here
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# 📜 Available Scripts
 
-## Deploy on Vercel
+## Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Runs the development server.
+
+
+## Production Build
+
+```bash
+npm run build
+```
+
+Creates an optimized production build.
+
+
+## Start Production Server
+
+```bash
+npm run start
+```
+
+Runs the production server.
+
+
+## Lint
+
+```bash
+npm run lint
+```
+
+Checks code quality.
+
+# 🏗️ Architecture
+
+OpenChatAI follows a modular architecture:
+
+```text
+UI Components
+      |
+      |
+Hooks
+      |
+      |
+Context Providers
+      |
+      |
+API Layer
+      |
+      |
+AI Services
+```
+
+The structure is designed to keep components reusable and make future scaling easier.
+
+# 🎯 Project Vision
+
+OpenChatAI is built to become a scalable AI assistant platform with:
+
+- Clean architecture
+- Modern UI/UX
+- Fast performance
+- Reusable components
+- AI-powered conversations
+- Production-ready development practices
+
+# 👨‍💻 Developer
+
+Akshay
+
+# 📄 License
+
+This project is created for learning, experimentation, and development purposes.
