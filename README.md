@@ -24,53 +24,50 @@ The project aims to create a ChatGPT-like experience with a clean user interface
 
 ```text
 src
-│
 ├── app
-│ ├── api
-│ │ └── chat
-│ │     └── route.ts
-│ │
-│ ├── globals.css
-│ ├── layout.tsx
-│ └── page.tsx
+│   ├── api
+│   │   └── chat
+│   │       └── route.ts
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
 │
 ├── components
-│ │
-│ ├── chat
-│ │ ├── ChatWindow.tsx
-│ │ ├── EmptyChat.tsx
-│ │ ├── MessageBubble.tsx
-│ │ └── PromptInput.tsx
-│ │
-│ ├── layout
-│ │ ├── Header.tsx
-│ │ ├── MainLayout.tsx
-│ │ └── Sidebar.tsx
-│ │
-│ ├── providers
-│ │ └── ChatProvider.tsx
-│ │
-│ └── ui
-│ ├── Avatar.tsx
-│ ├── Button.tsx
-│ ├── Input.tsx
-│ ├── Loader.tsx
-│ └── Modal.tsx
+│   ├── chat
+│   │   ├── ChatWindow.tsx
+│   │   ├── EmptyChat.tsx
+│   │   ├── MessageBubble.tsx
+│   │   └── PromptInput.tsx
+│   │
+│   ├── layout
+│   │   ├── Header.tsx
+│   │   ├── MainLayout.tsx
+│   │   └── Sidebar.tsx
+│   │
+│   ├── providers
+│   │   └── ChatProvider.tsx
+│   │
+│   └── ui
+│       ├── Avatar.tsx
+│       ├── Button.tsx
+│       ├── Input.tsx
+│       ├── Loader.tsx
+│       └── Modal.tsx
 │
 ├── data
-│ ├── constants.ts
-│ ├── dummyChats.ts
-│ └── prompts.ts
+│   ├── constants.ts
+│   ├── dummyChats.ts
+│   └── prompts.ts
 │
 ├── hooks
-│ ├── useChat.ts
-│ ├── useLocalStorage.ts
-│ └── useTheme.ts
+│   ├── useChat.ts
+│   ├── useLocalStorage.ts
+│   └── useTheme.ts
 │
 ├── lib
-│ ├── api.ts
-│ ├── constants.ts
-│ └── utils.ts
+│   ├── api.ts
+│   ├── constants.ts
+│   └── utils.ts
 │
 └── types
     └── chat.ts
