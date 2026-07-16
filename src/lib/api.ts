@@ -10,8 +10,11 @@ export async function sendMessageToAI(
   content: string
 ): Promise<SendMessageResponse> {
 
+
   const response = await fetch("/api/chat", {
+
     method: "POST",
+
     headers: {
       "Content-Type": "application/json",
     },
@@ -19,15 +22,26 @@ export async function sendMessageToAI(
     body: JSON.stringify({
       message: content,
     }),
+
   });
 
 
+
   if (!response.ok) {
+
+    const error =
+      await response.json();
+
+    console.log(error);
+
     throw new Error(
       "Failed to send message"
     );
+
   }
 
 
+
   return response.json();
+
 }
